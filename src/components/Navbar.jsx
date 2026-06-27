@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const navItems = [
+  
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
@@ -37,9 +38,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-5">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-blue-400 cursor-pointer">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={600}
+          offset={-70}
+          className="text-2xl font-bold text-blue-400 cursor-pointer select-none"
+        >
           R | G
-        </h1>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">

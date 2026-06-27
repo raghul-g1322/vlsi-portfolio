@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 export default function Hero() {
   return (
     <motion.section
+      id="hero"
       className="relative min-h-screen flex items-center justify-center bg-[#050816] px-8 pt-24 md:pt-0 overflow-hidden"      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -132,7 +133,7 @@ export default function Hero() {
               md:w-[550px]
               sm:w-[220px]
               object-contain
-              translate-x-15
+              lg:translate-x-10 xl:translate-x-16
               animate-[float_6s_ease-in-out_infinite]
               drop-shadow-[0_35px_70px_rgba(0,0,0,0.45)]
             "
